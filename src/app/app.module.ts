@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,8 @@ import { CurrentTrainingComponent } from './training/current-training/current-tr
 import { NewTrainingComponent } from './training/new-training/new-training.component';
 import { PastTrainingsComponent } from './training/past-trainings/past-trainings.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     CurrentTrainingComponent,
     NewTrainingComponent,
     PastTrainingsComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HeaderComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
@@ -38,4 +42,4 @@ import { WelcomeComponent } from './welcome/welcome.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
